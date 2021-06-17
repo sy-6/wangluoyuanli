@@ -11,7 +11,7 @@
 <body>
     <a href="./index.html">返回</a>
     <h2>第三章 应用层</h2>
-        <a style="color: rgb(41, 255, 30);" href="./threetest.html">练习</a>
+    <p style="color: rgb(187, 0, 255);">点击答案处显示答案</p>
 
     <div>
         <h3>一.填空题</h3>
@@ -56,99 +56,106 @@
         <h3>二.选择题</h3>
 
 
-        <p> 1.FTP 协议中，下载文件的命令是（C ）。
+        <p> 1.FTP 协议中，下载文件的命令是（<span class="ans2">C</span> ）。
             <br>
             A.LIST
             <br> B.PWD
             <br>
-        <h4>C.RETR</h4>
+        <span class="ans3">C.RETR</span>
         <br> D.STOR
         </p><br><br>
-        <p> 2.FLP 协议中,PORT 命令的作用是（B）。
+        <p> 2.FLP 协议中,PORT 命令的作用是（<span class="ans2">B</span>）。
             <br>
             A.显示当前所在目录
             <br>
-        <h4> B.在主动模式中,客户端告诉服务器自己的数据连接端口</h4>
+        <span class="ans3"> B.在主动模式中,客户端告诉服务器自己的数据连接端口</span>
         <br> C.下载文件
         <br> D.上传文件
         </p><br><br>
-        <p>3.SMTP 服务器的默认端口是（D）。
+        <p>3.SMTP 服务器的默认端口是（<span class="ans2">D</span>）。
             <br>
             A.21
             <br> B.80 <br> C.110 <br>
-        <h4> D.25</h4>
+        <span class="ans3"> D.25</span>
         </p><br><br>
-        <p>4.POP3 服务器的默认端口是（C）。
+        <p>4.POP3 服务器的默认端口是（<span class="ans2">C</span>）。
             <br>
             A.21
             <br> B.80 <br>
-        <h4> C.110</h4> <br> D.25
+        <span class="ans3"> C.110</span> <br> D.25
         </p><br><br>
-        <p>5.在运输层使用UDP 协议的是（C）。
+        <p>5.在运输层使用UDP 协议的是（<span class="ans2">C</span>）。
             <br>
             A.Web 服务器
             <br> B.FTP 服务器 <br>
-        <h4>C.DNS 服务器</h4><br> D.SMTP 服务器
+        <span class="ans3">C.DNS 服务器</span><br> D.SMTP 服务器
         </p><br><br>
-        <p>6.当DHCP 服务器收到DHCP Discover 报文时,要回复（C）报文。
+        <p>6.当DHCP 服务器收到DHCP Discover 报文时,要回复（<span class="ans2">C</span>）报文。
             <br>
             A.DHCP Release
             <br> B.DHCP Request <br>
-        <h4>C.DHCP Offer</h4> <br> D.DHCP Ack
+        <span class="ans3">C.DHCP Offer</span> <br> D.DHCP Ack
         </p><br><br>
-        <p>7.当DHCP 客户端收到服务器的DHCP Offer 报文时,要回复（B）报文。
+        <p>7.当DHCP 客户端收到服务器的DHCP Offer 报文时,要回复（<span class="ans2">B</span>）报文。
             <br>
             A.DHCP Release
             <br>
-        <h4>B.DHCP Request</h4> <br> C.DHCP Offer <br> D.DHCP Ack
+        <span class="ans3">B.DHCP Request</span> <br> C.DHCP Offer <br> D.DHCP Ack
         </p><br><br>
-        <p>8.（B）报文是以广播的形式发送的。
+        <p>8.（<span class="ans2">B</span>）报文是以广播的形式发送的。
             <br>
             A.DHCP Release
             <br>
-        <h4>B.DHCP Request </h4> <br> C.DHCP Offer <br> D.DHCP Ack
+        <span class="ans3">B.DHCP Request </span> <br> C.DHCP Offer <br> D.DHCP Ack
         </p><br><br>
     </div>
     <div>
         <h3>三.简答题</h3>
         <p>1. 简述客户－服务器模型 <br>
+            <span class="ans">
                 在TCP/IP体系中，首先发起通信的应用进程称为客户，等待通信的应用进程称为服务器，TCP/IP应用层基本的工作模型是客户－服务器模型。在客户－服务器模型中，服务器先运行并处于等待状态，准备好接收客户的请求。客户在需要时向服务器发出请求，服务器收到请求后给客户做出应答，然后客户再次发出请求，服务器再次给予应答……
-            
+            </span>
         </p> <br>
         <p>2.请解释HTTP协议中，GET，POST，HEAD，PUT和DELETE的含义。 <br>
+            <span class="ans">
                 (1) Get: 当浏览器请求获取某个文档时，方法字段的值就使用GET。<br>
                 (2) Post:浏览器向服务器提交网页上表单内的一些数据（如用户信息）时，方法字段的值要设为POST，实体主体中要放入提交的内容。<br>
                 (3) HEAD:HEAD字段与Get字段类似，但服务器对于HEAD请求的应答中不含有文档的内容，因此HEAD常用来进行测试和故障跟踪，用来判断某一个链结是否有效，能否被访问。<br>
                 (4) PUT: PUT用来将一个文档上传到Web服务器上，文档的名字和位置由URL字段指明。<br>
                 (5) DELETE: DELETE用来删除Web服务器上的文档，文档的名字和位置由URL字段指定。
-          
+          </span>
         </p> <br><br>
         <p>3.什么是Web代理，它的作用是什么？ <br>
+            <span class="ans">
                 Web代理是代替Web浏览器去访问服务器的技术。当设置代理后，浏览器会将请求发给Web代理而不是发给目的服务器。Web代理收到请求后，首先查看请求的网页是否已经缓存在本地，如果有，就直接发给用户；如果没有，Web代理就作为客户端，去访问目的服务器，然后再将收到的网页转发用户。
                 使用代理服务器技术能够提高访问外网的速度，并且能节省带宽，降低开销。
-            
+            </span>
         </p> <br><br>
         <p>
             4. 什么是Cookie，Cookie有什么作用？ <br>
-           
+            <span class="ans">
                 Cookie是Web服务器用来识别用户身份，记录用户行为的一种技术，Cookie常用在一些电子商务网站中。当用户第一次访问某个具有Cookie功能的网站时，Web服务器的应答中会包含set-cookie字段，分配给用户一个唯一的ID号，给用户设置Cookie，浏览器会将这ID号保存在硬盘中。此后在访问这个网站的过程中，浏览器的请求报文中会包含Cookie字段，Cookie字段的值就是这个ID号，这样服务器就可以记录用户访问网站的行为了。
-       
+       </span>
         </p> <br><br>
         <p>5. 简述FTP协议的主动模式和被动模式。<br>
+            <span class="ans">
                 通常情况下，当需要有数据传递时，数据连接是由服务器主动向客户端发起的，这种模式称为主动模式。客户端使用Port命令告诉服务器自己的数据连接端口，服务器从自己的20端口发起和客户端数据端口的连接，然后传输数据。
                 但当客户端的主机安装有防火墙软件时，通常会禁止外来主机发起的连接，这时客户端会发出PASV命令，通知服务器采用被动模式。服务器通过控制连接将自己数据端口告诉客户端，并在这个端口上等待客户端的请求，由客户端发起和服务器的数据连接，这种方式称为被动模式。
-        </p> <br><br>
+       </span> </p> <br><br>
         <p>6. 简述FTP协议的数据连接和控制连接。 <br>
+            <span class="ans">
                 在FTP协议中有两个连接。<br>
                 FTP客户首先与FTP服务器的21端口建立连接，这个连接称为控制连接，专门用来传输控制信息，如用户标识、口令、用户命令等。第二个连接称为数据连接，主要用来传输目录文件列表、下载文件和上传文件。在主动模式下，服务器从20端口发起和客户端的数据连接；在被动模式下，由客户端发起和服务器某个端口的数据连接。控制连接在整个会话过程中都存在，直到用户退出。数据连接在传输数据前建立，数据传输完毕后就会关闭，下次传输数据时要重新建立数据连接。
-        </p> <br><br>
+     </span>   </p> <br><br>
         <p>7. SMTP服务器和POP3服务器有什么不同？SMTP协议与POP3协议有什么区别？ <br>
+            <span class="ans">
                 发邮件时，用户代理将邮件发送到SMTP服务器上，由SMTP服务器将邮件发送到目的邮件服务器。收邮件时，用户代理从POP3服务器上将邮件下载到本地处理。发送邮件时要使用SMTP协议，接收邮件时要使用POP3协议
-        </p> <br><br>
-        <p>8. 什么是DNS，它的作用是什么？<br><span>
+        </span></p> <br><br>
+        <p>8. 什么是DNS，它的作用是什么？<br><span class="ans import">
+            <span class="ans">
                 DNS是指域名系统。域名系统是一个全球性的分布式的数据库，有许多域名服务器组成，这些域名服务器相互连接，组成了一个分布式系统，主要完成将域名解析成IP地址的工作。</span>
         </p> <br><br>
-        <p>9. 简述DHCP的工作原理 <br><span>
+        <p>9. 简述DHCP的工作原理 <br><span class="ans import">
                 （1）客户端启动后，向网络中广播一个DHCP Discover报文，寻找DHCP服务器。<br>
                 （2）DHCP服务器收到DHCP Discover后，向客户端发送DHCP Offer报文，向客户端提供IP地址、子网掩码、默认网关、域名服务器的信息。<br>
                 （3）客户端可能会收到一个或多个DHCP Offer报文（网络中可能有多个DHCP服务器），客户端从中选择一个DHCP服务器，并广播DHCP Request报文。在DHCP
@@ -157,21 +164,52 @@
         </p> <br><br>
     </div>
     <a href="./index.html">返回</a>
+    <script>
+        var ans = document.getElementsByClassName("ans")
+        var ans2 = document.getElementsByClassName("ans2")
 
+        
+        for (let i = 0; i < ans.length; i++) {
+
+            ans[i].onclick = function () {
+                this.style.opacity = "1"
+            }
+        }
+        for (let i = 0; i < ans2.length; i++) {
+
+            ans2[i].onclick = function () {
+                this.style.opacity = "1"
+                var ans3 = this.parentNode.getElementsByClassName("ans3")[0]
+                ans3.style.color = "red"
+
+            }
+
+        }
+    </script>
 </body>
 <style>
+    .ans {
+        opacity: 0;
+    }
+
+    .ans2 {
+        color: red;
+        opacity: 0;
+    }
+
     h4 {
         color: red;
         padding: 0;
         margin: 0 2px;
         display: inline;
+
     }
+
 
     p {
         display: inline;
     }
-
-    span {
+    span.import{
         color: red;
     }
 </style>

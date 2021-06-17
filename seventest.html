@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第七章 局域网 练习</title>
+</head>
+
+<body>
+    <a href="./index.html">返回</a>
+    <h2>第七章 局域网</h2>
+    <p style="color: rgb(187, 0, 255);">点击答案处显示答案</p>
+
+    <div>
+        <h3>一.填空题</h3>
+        <p> 1. 局域网中常见的拓扑结构有
+        <h4 class="ans">星型</h4>、<h4 class="ans">总线型</h4>和<h4 class="ans">环型</h4>3 种。</p><br><br>
+        <p> 2. 局域网涉及OSI 参考模型中的
+        <h4 class="ans">数据链路</h4>层和<h4 class="ans">物理</h4>层。</p><br><br>
+        <p> 3. MAC 地址共有
+        <h4 class="ans">48</h4>比特。</p><br><br>
+        <p> 4. 以太网使用
+        <h4 class="ans">CSMA/CD</h4>协议来解决总线使用权的问题。</p><br><br>
+        <p> 5. 对于l0Mbps 的以太网,争用期为
+        <h4 class="ans">51.2μs</h4>,最短帧长是<h4 class="ans">64字节</h4>。</p><br><br>
+        <p> 6. l0Base-2 使用的传输介质是
+        <h4 class="ans">细同轴电缆</h4>。</p><br><br>
+        <p> 7. l0Base-5 使用的传输介质是
+        <h4 class="ans">粗同轴电缆</h4>。</p><br><br>
+        <p> 8. l0Base-T 使用的传输介质是
+        <h4 class="ans">双绞线</h4>。</p><br><br>
+
+
+    </div>
+    <div>
+        <h3>二.选择题</h3>
+        <p> 1.在以太网中,MAC 帧中的源地址字段是(<span class="ans2">A</span>)。
+            <br>
+            <span class="ans3">A.发送方的物理地址</span>
+            <br>B.前一个站点的物理地址
+            <br> C.下一个站点的物理地址<br> D.接收方的物理地址
+        </p><br><br>
+        <p> 2.在以太网中,MAC 帧中的目的地址字段是(<span class="ans2">D</span>)。
+            <br>
+            A.发送方的物理地址
+            <br>B.前一个站点的物理地址
+            <br> C.下一个站点的物理地址<br>
+            <span class="ans3">D.接收方的物理地址</span>
+        </p><br><br>
+        <p> 3.(<span class="ans2">C</span>)使用星型拓扑。
+            <br>
+            A.10Base-5
+            <br>B.10BaSe-2
+            <br>
+            <span class="ans3"> C.10Base-T </span><br> D.以上都不对
+        </p><br><br>
+        <p> 4.l0Mbps 以太网帧的最短长度为(<span class="ans2">C</span>)字节。
+            <br>
+            A.46
+            <br>B.18 <br>
+            <span class="ans3">C.64 </span><br> D.1518
+        </p><br><br>
+        <p> 5.交换机通过将数据帧中的(<span class="ans2">A</span>)和自己地址表中的信息进行比较,实现数据帧的转发。
+            <br>
+            <span class="ans3">A.目的MAC 地址</span>
+            <br>B.源MAC 地址
+            <br> C.目的IP 地址<br> D.源IP 地址
+        </p><br><br>
+        <p> 6,集线器工作在(<span class="ans2">A</span>)
+            <br>
+            <span class="ans3">A.物理层</span>
+            <br>B.数据链路层<br> C.网络层<br> D.运输层
+        </p><br><br>
+        <p> 7,交换机工作在(<span class="ans2">B</span>)。
+            <br>
+            A.物理层
+            <br>
+            <span class="ans3">B.数据链路层</span><br> C.网络层<br> D.运输层
+        </p><br><br>
+        <p> 8.有关CSMA/CD 协议正确的说法是(<span class="ans2">C</span>)。
+            <br>
+            A.如果有数据要发送,那么主机就立刻发送
+
+            <br> B.如果发生了碰撞,则碰撞双方等待一个固定的时间,再继续发送
+            <br>
+            <span class="ans3">C.如果过了争用期后都没有检测到碰撞,那么就肯定不会有碰撞了</span>
+            <br> D.站点在发送完帧之后再对冲突进行检测
+        </p><br><br>
+    </div>
+    <div>
+        <h3>三.简答题</h3>
+
+        <p>
+            1. 简述CSMA/CD协议原理。<br>
+            <span class="ans">
+                CSMA/CD全称为载波侦听多路访问冲突检测。网络中的每个节点都有同等的权利使用总线，称为多路访问。在发送数据前，节点需要先“听”一下总线上是否有数据信号，这个过程称为载波侦听。如果检测到有数据信号，说明别的主机正在使用总线，于是节点便等待直到总线空闲。如果“听”到总线没有数据信号，说明总线空闲，那么节点就将数据帧发送出去。在发送数据帧的同时，还需要继续监听总线，检测是否发生了冲突，称为冲突检测。如果发生了冲突，要立刻停止发送。冲突后节点需要等待一段的随机的时间，再次发送数据帧，再次重复以上的过程。
+            </span>
+        </p><br><br>
+        <p>
+            2. 什么是争用期？争用期如何计算？争用期同最短帧长有什么关系？ <br>
+            <span class="ans">
+                在以太网中，节点发出数据帧后的一段时间内可能会遇到冲突，这段时间称为争用期。争用期过后，就不会有冲突产生了。争用期＝2倍总线长度/信号的传播速度。最短帧长＝争用期*数据发送速率（带宽）。
+            </span>
+        </p><br><br>
+        <p>
+            3. 简述截断二进制后退指数算法 <br><span class="ans import">
+                以太网中，当检测到冲突时，节点要停止发送数据，等待一段随机的时间再重新发送。这段时间的长短通过截断二进制后退指数算法来计算。 <br>
+                （1） 定义一个参数k，表示冲突的次数。第一次冲突时，k的值为1。以后每冲突一次，k的值就加1。当冲突次数超过10次时，k的值始终为10，不再自增。即k＝Min［冲突次数，10］。<br>
+                （2） 每次冲突后，从[0，1，2，4…2k－1]中随机选择一个数字r，r*2t就是需要等待的时间，其中2t是争用期。 <br>
+                （3） 如果重传16次仍然冲突，就丢弃数据，向高层报告。
+            </span>
+        </p><br><br>
+        <p>
+            4. 什么是广播域？什么是冲突域？两者有什么联系和区别？ <br><span class="ans import">
+                广播域是一个广播帧能够到达的最大范围。冲突域是指局域网中的某个区域内，如果两台主机同时发送数据，就会产生冲突，这样的一个区域就称为冲突域。一个广播域可能包括一个或多个冲突域。在集线器连接的网络中，冲突域和广播域是重合的。在交换机连接的网络中，一个交换机就是一个广播域，而交换机的每一个端口是一个冲突域。
+            </span>
+        </p><br><br>
+        <p>
+            5. 简述集线器和交换机的区别。 <br>
+            <span class="ans">
+                集线器是工作在物理层的设备。集线器会将从一个端口收到的信号，向其他所有的端口转发，因此集线器发挥的实际上是一个总线的作用，一个集线器就是一个冲突域。交换机是工作在数据链路层的设备，它能够识别数据帧，能够根据自学习算法，在交换机内建立端口和MAC地址的对应关系。根据数据帧中目的MAC地址将数据帧转发到对应的端口，而不是广播到所有的其他端口，因此交换机每个端口是一个冲突域。使用交换机能够有效地减小冲突，提供数据包的发送效率。
+            </span>
+        </p><br><br>
+        <p>
+            6. 什么是VLAN？为什么要划分VLAN？<br>
+            <span class="ans">
+                VLAN是指虚拟局域网技术，是为解决以太网的广播风暴问题和安全性而提出的一种技术。
+                一个局域网就是一个广播域。随着局域网的范围不断扩大，广播域也在不断地扩大，随之会带来“广播风暴”的问题。通过在交换机上做特定的设置，将属于一个局域网的主机分成若干个小组，每个小组是一个VLAN。一个VLAN是一个逻辑广播域，一个广播帧只在某个VLAN范围内传递，不会传递到其他的VLAN上。利用VLAN可以有效地在交换机上分割广播域，动态地管理网络。
+            </span>
+        </p><br><br>
+    </div>
+    <a href="./index.html">返回</a>
+    <script>
+        var ans = document.getElementsByClassName("ans")
+        var ans2 = document.getElementsByClassName("ans2")
+
+
+        for (let i = 0; i < ans.length; i++) {
+
+            ans[i].onclick = function () {
+                this.style.opacity = "1"
+            }
+        }
+        for (let i = 0; i < ans2.length; i++) {
+
+            ans2[i].onclick = function () {
+                this.style.opacity = "1"
+                var ans3 = this.parentNode.getElementsByClassName("ans3")[0]
+                ans3.style.color = "red"
+
+            }
+
+        }
+    </script>
+</body>
+<style>
+    .ans {
+        opacity: 0;
+    }
+
+    .ans2 {
+        color: red;
+        opacity: 0;
+    }
+
+    h4 {
+        color: red;
+        padding: 0;
+        margin: 0 2px;
+        display: inline;
+
+    }
+
+
+    p {
+        display: inline;
+    }
+
+    span.import {
+        color: red;
+    }
+</style>
+
+</html>

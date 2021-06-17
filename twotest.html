@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二章 计算机网络体系结构 练习</title>
+</head>
+
+<body>
+    <a href="./index.html">返回</a>
+    <h2>第二章 计算机网络体系结构 练习</h2>
+    <p style="color: rgb(187, 0, 255);">点击答案处显示答案</p>
+
+    <div>
+        <h3>一.填空题</h3>
+        <p>1．OSI参考模型有
+        <h4 class="ans">7</h4>层，TCP/IP参考模型有<h4 class="ans">4</h4>层</p><br><br>
+        <p>2．TCP/IP体系结构中，最顶层的是
+        <h4 class="ans">应用层</h4>
+        </p><br><br>
+        <p>3．OSI体系结构中，第3层是
+        <h4 class="ans">网络层</h4>
+        </p><br><br>
+        <p>4．TCP和IP体系结构中，运输层的两个协议是
+        <h4 class="ans">TCP</h4>和<h4 class="ans">UDP</h4>
+        </p><br><br>
+        <p>5．TCP/IP体系结构中，互联网层的主要协议是
+        <h4 class="ans">IP</h4>
+        </p><br><br>
+    </div>
+    <div>
+        <h3>二.选择题</h3>
+        <p>1.（ <span class="ans2"> A </span>）是距离传输介质最近的层。<br>
+            <span class="ans3">A.物理层</span> <br> B.数据链路层 <br> C.网络层 <br> D.运输层
+        </p><br><br>
+        <p>2. 当数据包从低层向高层传送时，报文首部会（ <span class="ans2"> B </span>）。<br>
+            A.添加 <br> <span class="ans3">B.减去</span> <br> C.重安排 <br> D.修改
+        </p><br><br>
+        <p>3. 当数据包从高层向低层传送时，报文首部会（ <span class="ans2"> A </span>）。<br>
+            <span class="ans3">A.添加</span> <br> B.减去 <br> C.重安排 <br> D.修改
+        </p><br><br>
+        <p>4. 在OSI参考模型中，第2层位于物理层和（ <span class="ans2"> A </span>）之间。<br>
+            <span class="ans3">A.网络层</span> <br> B.数据链路层 <br> C.传输层 <br> D.表示层
+        </p><br><br>
+        <p>5. 当数据从主机A到主机B时，A中第3层所添加的首部被B中第（ <span class="ans2"> A </span>）层读取。<br>
+            <span class="ans3">A.3 </span><br> B.2 <br> C.1 <br> D.4
+        </p><br><br>
+        <p>6. 物理层关心物理介质上（ <span class="ans2"> D </span>）的传输。<br>
+            A.程序 <br> B.对话 <br> C.协议 <br> <span class="ans3">D.比特</span>
+        </p><br><br>
+        <p>7. 关于网咯体系结构，正确的是（ <span class="ans2"> C </span>）。<br>
+            A.各层之间互相独立，没有联系 <br>
+            B.相邻层实体之间通信要遵循共同的协议<br>
+            <span class="ans3">C.对等层实体之间通信要遵循共同的协议</span><br>
+            D.所有层次之间的通信都是逻辑通信
+        </p><br><br>
+        <p>8.（ <span class="ans2"> B </span>）层的主要目的是把分组送到目的地。<br>
+            A.传输层<br>
+            <span class="ans3">B.网络层</span><br>
+            C.会话层<br>
+            D.物理层
+            <br><br>
+
+        <p>9.TCP/IP体系中IP协议实现的是（ <span class="ans2"> B </span>）的功能<br>
+            A.传输层<br>
+            <span class="ans3">B.网络层</span><br>
+            C.会话层<br>
+            D.物理层
+            <br><br>
+
+        <p>10.关于TCP/IP体系结构，错误的是（ <span class="ans2"> C </span>）。<br>
+            A.TCP/IP协议体系是事实上的因特网协议标准<br>
+            B.TCP协议能够为应用层提供可靠的端到端的通信<br>
+            <span class="ans3">C.IP协议能够为传输层提供可靠的数据传输服务</span><br>
+            D.TCP/IP协议体系中，没有表示层和会话层
+        </p><br><br>
+    </div>
+    <div>
+        <h3>三.简答题</h3>
+        <p>1. 什么是网络协议？网络协议由哪几部分组成？ <br><span class="ans import">
+                网络协议是通信双方为了实现通信而商定的一些规则。具体而言，网络协议可以理解为由三部分组成：<br>
+                （1） 语法：通信时双方交换数据和控制信息的格式。<br>
+                （2） 语义：每部分控制信息和数据所代表的含义。<br>
+                （3） 时序：通信如何发起；在收到一个数据后，下一步要做什么。</span>
+        </p><br><br>
+        <p>2. 简述协议分层原理 <br><span class="ans">
+            要完成网络通信，通常会采用分层的方式来组织协议。每一层都实现特定的功能，所有的层次集合起来共同完成网络通信。层次相同的层称为对等层，对等层之间遵循相同的协议，通过协议实现特定的功能。每一层中实现了协议的活动元素称为实体，对等层内的实体称为对等实体。每一层都使用下一层为它提供的服务，同时也向自己的高层提供服务。
+            数据从发送端的最高层开始，层层向下，层层封装，直到发送方的最底层，转换为电磁信号后经过物理链路到达接收端的最底层，再层层向上，层层解封装，最后到达接收方的最高层。某一层添加的首部，在到达对等层后，就会被剥掉，剩余的部分会继续向上传递，直至最高层。这里，高层使用了低层的服务，低层向高层提供服务，高层通过低层提供的服务接口访问低层的服务。
+        </span></p><br><br>
+        <p>3．什么是计算机网络体系结构？ <br><span class="ans">
+            计算机网络的各个层次以及每个层次协议的集合称为计算机网络体系结构。各个层次的所有协议也被称为协议栈。</span>
+        </p><br><br>
+        <p>4．简述OSI参考模型和TCP/IP参考模型 <br><span class="ans import">
+                OSI参考模型，共分七层，从上到下依次为应用层、表示层、会话层、运输层、网络层、数据链路层和物理层。
+                应用层直接面向用户，用来实现特定的应用。表示层用来对应用层的数据进行格式转换，对应用层数据的压缩、解压缩，加密、解密。会话层用来管理会话过程，包括会话的建立、维持和结束。运输层为通信的两个进程之间提供端到端(end
+                to
+                end)的通信服务。网络层的主要功能是为分组选路。发送方和接收方之间会间隔其他的网络，网络层的作用就是为分组找到一条合适的路径，使得分组能够到达目的地。数据链路层的任务是在相邻节点间传输帧。物理层的任务就是将0、1比特从物理链路的一端发送到另一端。
+                TCP/IP模型共分四层，从上到下分别是应用层、运输层、互联网层和网络接口层。
+                TCP/IP模型的应用层和OSI参考模型的应用层类似，包括具体的应用，对应许多应用层协议，如HTTP、FTP、SMTP、POP3等。运输层同样也提供端到端的通信服务，TCP/IP体系的运输层里包含两个协议，TCP协议和UDP协议。TCP协议提供可靠的端到端通信。UDP协议比较简单，不能保证数据的可靠性，但效率比较高。互联网层相当于OSI参考模型中的网络层，它的职责是将运输层交给它的数据送到目的地，中间可能会跨越多个网络，互联网层要为数据找到一条正确的路.
+                互联网层是整个TCP/IP协议体系的关键部分，主要的协议是IP协议。网络接口层相当于OSI参考模型中的数据链路层和物理层。TCP/IP模型没有明确描述网络接口层，只是指出主机要使用某种协议与具体的网络连接，从而能够传递IP分组。</span>
+        </p><br><br>
+    </div>
+    <a href="./index.html">返回</a>
+    <script>
+        var ans = document.getElementsByClassName("ans")
+        var ans2 = document.getElementsByClassName("ans2")
+
+
+        for (let i = 0; i < ans.length; i++) {
+
+            ans[i].onclick = function () {
+                this.style.opacity = "1"
+            }
+        }
+        for (let i = 0; i < ans2.length; i++) {
+
+            ans2[i].onclick = function () {
+                this.style.opacity = "1"
+                var ans3 = this.parentNode.getElementsByClassName("ans3")[0]
+                ans3.style.color = "red"
+
+            }
+
+        }
+    </script>
+</body>
+<style>
+    .ans {
+        opacity: 0;
+    }
+
+    .ans2 {
+        color: red;
+        opacity: 0;
+    }
+
+    h4 {
+        color: red;
+        padding: 0;
+        margin: 0 2px;
+        display: inline;
+
+    }
+
+
+    p {
+        display: inline;
+    }
+
+    span.import{
+        color: red;
+    }
+</style>
+
+</html>
